@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #1a1a1a;
+}
+
+.container {
+  max-width: 500px;
+  height: 500px;
+  margin: 0 auto;
+
+  border: 5px solid white;
+
+  display: flex;
+}
+
+.item {
+  background: #ccc;
+  padding: 20px;
+  margin: 5px;
+
+  text-align: center;
+}
