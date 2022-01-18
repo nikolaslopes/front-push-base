@@ -17,6 +17,28 @@ body {
   border: 5px solid white;
 
   display: flex;
+  flex-wrap: wrap;
+}
+
+
+.container-secondary {
+  max-width: 500px;
+  height: 500px;
+  margin: 15px auto;
+
+  border: 5px solid white;
+
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+@media (max-width: 720px) {
+  .container {
+    border: 5px solid rgb(136, 13, 136);
+    flex-direction: column;
+
+    flex-wrap: wrap;
+  }
 }
 
 .item {
