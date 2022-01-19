@@ -19,7 +19,6 @@ body {
   flex-wrap: wrap;
 }
 
-
 .container-secondary {
   max-width: 700px;
   height: 500px;
@@ -27,9 +26,8 @@ body {
   border: 5px solid white;
 
   display: flex;
-  flex-wrap: nowrap;
-
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: baseline;
 }
 
 @media (max-width: 720px) {
@@ -51,9 +49,8 @@ body {
 
 .item-secondary {
   background: rgb(84, 184, 184);
-  padding: 20px;
+  padding: 20px 50px;
   margin: 5px;
-  max-height: 100px;
 
   text-align: center;
 }
