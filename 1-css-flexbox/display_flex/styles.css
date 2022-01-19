@@ -21,16 +21,15 @@ body {
 
 .container-secondary {
   max-width: 700px;
-  height: 500px;
+  height: 700px;
   margin: 15px auto;
   border: 5px solid white;
 
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 
-  justify-content: center;
-  align-content: center;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 720px) {
@@ -44,10 +43,11 @@ body {
 
 .item {
   background: rgb(78, 41, 165);
-  padding: 20px;
+  /* padding: 20px 50px; */
   margin: 5px;
 
   text-align: center;
+  flex-grow: 1;
 }
 
 .item-secondary {
