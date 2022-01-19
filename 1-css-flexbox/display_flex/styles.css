@@ -21,17 +21,19 @@ body {
 
 
 .container-secondary {
-  max-width: 500px;
+  max-width: 700px;
   height: 500px;
   margin: 15px auto;
-  border: 5px solid rgb(84, 184, 184);
+  border: 5px solid white;
 
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-wrap: nowrap;
+
+  justify-content: space-around;
 }
 
 @media (max-width: 720px) {
-  .container, .container-secondary {
+  .container {
     border: 5px solid rgb(136, 13, 136);
     flex-direction: column;
 
@@ -40,9 +42,18 @@ body {
 }
 
 .item {
-  background: #ccc;
+  background: rgb(78, 41, 165);
   padding: 20px;
   margin: 5px;
+
+  text-align: center;
+}
+
+.item-secondary {
+  background: rgb(84, 184, 184);
+  padding: 20px;
+  margin: 5px;
+  max-height: 100px;
 
   text-align: center;
 }
