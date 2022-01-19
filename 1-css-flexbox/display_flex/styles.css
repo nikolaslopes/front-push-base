@@ -10,8 +10,8 @@ body {
 }
 
 .container {
-  max-width: 500px;
-  height: 500px;
+  max-width: 700px;
+  height: 700px;
   margin: 0 auto;
   border: 5px solid white;
 
@@ -45,9 +45,10 @@ body {
   background: rgb(78, 41, 165);
   /* padding: 20px 50px; */
   margin: 5px;
-
   text-align: center;
+
   flex-grow: 1;
+  flex-basis: 200px;
 }
 
 .item-secondary {
