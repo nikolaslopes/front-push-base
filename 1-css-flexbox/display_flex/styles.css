@@ -26,8 +26,11 @@ body {
   border: 5px solid white;
 
   display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
+  flex-wrap: wrap;
+  align-items: center;
+
+  justify-content: center;
+  align-content: center;
 }
 
 @media (max-width: 720px) {
