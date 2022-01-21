@@ -38,11 +38,11 @@ body {
 
 .item {
   background: rgb(78, 41, 165);
-  /* padding: 20px 50px; */
+  padding: 20px 50px;
   margin: 5px;
   text-align: center;
 
-  flex-basis: 200px;
+  /* flex-basis: 100px; */
   flex-grow: 1;
 }
 
@@ -51,10 +51,6 @@ body {
   /* padding: 20px 50px; */
   margin: 5px;
   text-align: center;
-
-  flex-grow: 1;
-  flex-shrink: 10;
-  flex-basis: 100px;
 
   flex: 1 100 100px;
 }
