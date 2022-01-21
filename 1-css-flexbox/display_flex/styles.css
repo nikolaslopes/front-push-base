@@ -17,6 +17,9 @@ body {
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+
+  align-items: stretch;
 }
 
 .container-secondary {
@@ -32,18 +35,18 @@ body {
 @media (max-width: 720px) {
   :is(.container, .container-secondary) {
     border: 5px solid rgb(136, 13, 136);
-    /* flex-direction: column; */
+    flex-direction: column;
   }
 }
 
 .item {
   background: rgb(78, 41, 165);
-  padding: 20px 50px;
+  padding: 20px 30px;
   margin: 5px;
   text-align: center;
 
   /* flex-basis: 100px; */
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .item-secondary {
