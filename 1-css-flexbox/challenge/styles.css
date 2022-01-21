@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  background-color: #0c0c0c;
+  color: #ccc;
+}
+
+header {
+  background-color: #040404;
+  height: 72px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  max-width: 1140px;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 8px 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  background-color: #ccc;
+
+  height: 50px;
+  width: 50px;
+
+  border-radius: 10px;
+}
+
+.nav-button {
+  background-color: rgb(207, 192, 192);
+  height: 50px;
+  width: 120px;
+
+  border-radius: 10px;
+}
+
+.nav-menu {
+  list-style: none;
+
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 16px;
+}
+
+.nav-link {
+  text-decoration: none;
+
+  display: inline-block;
+  padding: 8px 16px;
+
+  color: #ccc;
+  transition: .5s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-top {
+  display: flex;
+  padding: 16px 0;
+
+  flex: 1 1 auto;
+}
+
+.video-top-thumb {
+  background-color: #ccc;
+  width: 350px;
+  height: 200px;
+
+  border-radius: 10px;
+  margin: 8px;
+
+  flex: 1 1 auto;
+}
+
+.description {
+  flex: 1 1 auto;
+  margin-left: 8px;
+}
+
+:is(h3, h4) {
+  line-height: 130%;
+  margin: 4px 0;
+  color: #fff;
+}
+
+p {
+  font-size: 12px;
+  color: #777;
+}
+
+p + p {
+  margin: 4px 0;
+}
+
+.container-middle {
+  padding: 16px 0;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.container-middle-item-1 {
+  padding: 16px 0;
+  margin-right: 8px;
+}
+
+.video-main-thumb {
+  background-color: #ccc;
+
+  width: 300px;
+  height: 400px;
+
+  border-radius: 10px;
+
+  flex: 1 1 auto;
+}
+
+.container-middle-item-2{
+  display: flex;
+  flex-direction: column;
+
+  padding: 16px 0;
+  margin-left: 8px;
+
+  margin-right: 16px;
+}
+
+.video-middle {
+  display: flex;
+  margin-bottom: 16px;
+
+  align-items: center;
+}
+
+.video-middle-thumb {
+  background-color: #ccc;
+
+  width: 140px;
+  height: 100px;
+
+  border-radius: 10px;
+  margin-right: 8px;
+
+  flex: 1 1 auto;
+}
+
+.container-middle-item-3 {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 16px;
+}
+
+.video-side {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.video-side-thumb {
+  background-color: #ccc;
+
+  width: 140px;
+  height: 200px;
+
+  margin-right: 8px;
+  border-radius: 10px;
+
+  flex: 1 1 auto;
+}
