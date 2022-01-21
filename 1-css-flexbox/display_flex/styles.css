@@ -21,6 +21,8 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
+
+  align-items: stretch;
 }
 
 .container-secondary {
