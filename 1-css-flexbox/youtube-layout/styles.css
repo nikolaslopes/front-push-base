@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -9,4 +10,53 @@ body {
   height: 100vh;
 
   background: #0c0c0c;
+}
+
+header {
+  background-color: #040404;
+  height: 72px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  width: 100%;
+  padding: 8px 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  background-color: #ccc;
+  width: 48px;
+  height: 48px;
+
+  border-radius: 10px;
+}
+
+.nav-menu {
+  list-style: none;
+
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 16px;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 8px 16px;
+
+  text-decoration: none;
+
+  color: #222;
 }
