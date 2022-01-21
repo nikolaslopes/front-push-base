@@ -88,8 +88,10 @@ header {
 .container-top {
   display: flex;
   padding: 16px 0;
+}
 
-  flex: 1 1 300px;
+.video-top {
+  flex: 1 1 auto;
 }
 
 .video-top-thumb {
@@ -133,6 +135,8 @@ p + p {
 .container-middle-item-1 {
   padding: 16px 0;
   margin-right: 8px;
+
+  flex: 1 1 auto;
 }
 
 .video-main-thumb {
@@ -160,6 +164,7 @@ p + p {
   display: flex;
   margin-bottom: 16px;
 
+  flex: 1 1 auto;
   align-items: center;
 }
 
@@ -185,6 +190,8 @@ p + p {
 .video-side {
   display: flex;
   margin-bottom: 16px;
+
+  flex: 1 1 auto;
 }
 
 .video-side-thumb {
