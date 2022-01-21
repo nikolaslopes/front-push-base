@@ -89,7 +89,7 @@ header {
   display: flex;
   padding: 16px 0;
 
-  flex: 1 1 auto;
+  flex: 1 1 300px;
 }
 
 .video-top-thumb {
