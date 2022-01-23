@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #040404;
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+body section p {
+  color: #fff;
+}
+
+body section h1 {
+  color: #fff;
+}
+
+body section h2 {
+  color: #ccc;
+}
+/*# sourceMappingURL=style.css.map */
