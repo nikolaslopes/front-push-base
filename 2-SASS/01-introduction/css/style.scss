@@ -7,18 +7,36 @@
 body {
   background-color: #040404;
   font-family: "Mochiy Pop P One", sans-serif;
+  color: #fff;
 
-  section {
-    p {
-      color: #fff;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    h1 {
-      color: #fff;
-    }
+section {
+  display: flex;
+  flex-direction: column;
 
-    h2 {
-      color: #ccc;
+  h1 {
+    letter-spacing: 8px;
+  }
+
+  h2 {
+    margin-top: 22px;
+    align-self: center;
+    letter-spacing: 6px;
+
+    span {
+      letter-spacing: normal;
+      color: #cf649a;
     }
+  }
+
+  p {
+    font-size: 22px;
+    margin-top: 40px;
+    align-self: center;
+    color: rgb(230, 93, 150);
   }
 }

@@ -7,18 +7,52 @@
 
 body {
   background-color: #040404;
-  font-family: 'Mochiy Pop P One', sans-serif;
-}
-
-body section p {
+  font-family: "Mochiy Pop P One", sans-serif;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body section h1 {
-  color: #fff;
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-body section h2 {
-  color: #ccc;
+section h1 {
+  letter-spacing: 8px;
+}
+
+section h2 {
+  margin-top: 22px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  letter-spacing: 6px;
+}
+
+section h2 span {
+  letter-spacing: normal;
+  color: #cf649a;
+}
+
+section p {
+  font-size: 22px;
+  margin-top: 40px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #e65d96;
 }
 /*# sourceMappingURL=style.css.map */
