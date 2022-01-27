@@ -1,3 +1,5 @@
+@import 'colors/_style';
+
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +7,9 @@
 }
 
 body {
-  background-color: #0c0c0c;
+  background-color: $black;
   font-family: 'Mochiy Pop P One', sans-serif;
-  color: #fff;
+  color: $white;
 
   display: flex;
   justify-content: center;
@@ -19,4 +21,8 @@ body {
 
 h1 {
   font-size: 24px;
+
+  span {
+    color: $pink;
+  }
 }
