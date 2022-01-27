@@ -15,6 +15,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -28,5 +32,23 @@ h1 {
 
 h1 span {
   color: #cf649a;
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fcfcfc;
+  background-color: #82269E;
+  font-size: 16px;
+  padding: 12px 124px;
+  border-radius: 8px;
+  margin-top: 24px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.link:hover {
+  -webkit-box-shadow: 0px 17px 46px rgba(169, 80, 196, 0.35), 0px 5.125px 13.8677px rgba(169, 80, 196, 0.228056), 0px 2.12866px 5.75991px rgba(169, 80, 196, 0.175), 0px 0.7699px 2.08325px rgba(169, 80, 196, 0.121944);
+          box-shadow: 0px 17px 46px rgba(169, 80, 196, 0.35), 0px 5.125px 13.8677px rgba(169, 80, 196, 0.228056), 0px 2.12866px 5.75991px rgba(169, 80, 196, 0.175), 0px 0.7699px 2.08325px rgba(169, 80, 196, 0.121944);
 }
 /*# sourceMappingURL=style.css.map */

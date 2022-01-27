@@ -1,4 +1,5 @@
 @import 'colors/_style';
+@import 'effects/_shadows';
 
 * {
   margin: 0;
@@ -13,6 +14,7 @@ body {
 
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 
   width: 100%;
@@ -24,5 +26,25 @@ h1 {
 
   span {
     color: $pink;
+  }
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+
+  color: $white;
+  background-color: $purple;
+  font-size: 16px;
+
+  padding: 12px 124px;
+  border-radius: 8px;
+
+  margin-top: 24px;
+
+  transition: .5s ease;
+
+  &:hover {
+    box-shadow: $box-shadow-purple;
   }
 }
