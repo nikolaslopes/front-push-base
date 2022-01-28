@@ -7,7 +7,7 @@
 
 body {
   background-color: #0c0c0c;
-  font-family: 'Mochiy Pop P One', sans-serif;
+  font-family: 'Fira Code', monospace;
   color: #fcfcfc;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,5 +50,41 @@ h1 span {
 .link:hover {
   -webkit-box-shadow: 0px 17px 46px rgba(169, 80, 196, 0.35), 0px 5.125px 13.8677px rgba(169, 80, 196, 0.228056), 0px 2.12866px 5.75991px rgba(169, 80, 196, 0.175), 0px 0.7699px 2.08325px rgba(169, 80, 196, 0.121944);
           box-shadow: 0px 17px 46px rgba(169, 80, 196, 0.35), 0px 5.125px 13.8677px rgba(169, 80, 196, 0.228056), 0px 2.12866px 5.75991px rgba(169, 80, 196, 0.175), 0px 0.7699px 2.08325px rgba(169, 80, 196, 0.121944);
+}
+
+.list {
+  width: 50%;
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list li {
+  padding: 8px;
+  list-style: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.list li a {
+  text-decoration: none;
+  color: #fcfcfc;
+}
+
+.list li:hover {
+  opacity: 0.7;
+}
+
+.list :nth-child(odd) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 /*# sourceMappingURL=style.css.map */
