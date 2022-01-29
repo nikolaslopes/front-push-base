@@ -1,6 +1,4 @@
-@use 'colors/_style';
-
-@use 'effects/_shadows';
+@use './abstracts/index' as *;
 
 * {
   margin: 0;
@@ -22,7 +20,7 @@ body {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 32px;
   color: $white;
 
   span {
@@ -35,7 +33,6 @@ h1 {
   text-decoration: none;
 
   color: $white;
-  background-color: $purple;
   font-size: 16px;
 
   padding: 12px 124px;
@@ -63,7 +60,6 @@ h1 {
     padding: 8px;
     list-style: none;
     transition: 0.5s ease;
-
 
     a {
       text-decoration: none;
