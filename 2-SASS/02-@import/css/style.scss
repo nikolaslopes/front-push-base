@@ -10,7 +10,6 @@
 body {
   background-color: $black;
   font-family: 'Fira Code', monospace;
-  color: $white;
 
   display: flex;
   justify-content: center;
@@ -23,6 +22,7 @@ body {
 
 h1 {
   font-size: 24px;
+  color: $white;
 
   span {
     color: $pink;
@@ -78,3 +78,11 @@ h1 {
     align-self: flex-end;
   }
 }
+
+p {
+  color: $white;
+
+  margin-top: 64px;
+  font-size: 24px;
+}
+

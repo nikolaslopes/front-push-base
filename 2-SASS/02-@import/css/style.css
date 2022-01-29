@@ -8,7 +8,6 @@
 body {
   background-color: #0c0c0c;
   font-family: 'Fira Code', monospace;
-  color: #fcfcfc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,6 +27,7 @@ body {
 
 h1 {
   font-size: 24px;
+  color: #fcfcfc;
 }
 
 h1 span {
@@ -86,5 +86,11 @@ h1 span {
 .list :nth-child(odd) {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+p {
+  color: #fcfcfc;
+  margin-top: 64px;
+  font-size: 24px;
 }
 /*# sourceMappingURL=style.css.map */
