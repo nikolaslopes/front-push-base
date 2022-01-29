@@ -42,6 +42,7 @@ h1 span {
 
 @media screen and (max-width: 720px) {
   h1 {
+    color: #cf649a;
     font-size: 22px;
   }
 }
@@ -72,6 +73,7 @@ h1 span {
 
 @media screen and (max-width: 720px) {
   .link {
+    color: #fcfcfc;
     padding: 20px 140px;
   }
 }
@@ -120,6 +122,9 @@ h1 span {
 }
 
 @media screen and (max-width: 720px) {
+  .list {
+    color: #fcfcfc;
+  }
   .list :is(li, :nth-child(odd)) {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -142,6 +147,7 @@ p {
 
 @media screen and (max-width: 720px) {
   p {
+    color: #fcfcfc;
     color: #ccc;
     font-size: 14px;
   }

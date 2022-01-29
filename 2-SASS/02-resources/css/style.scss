@@ -7,8 +7,9 @@
   }
 }
 
-@mixin responsive-mobile {
+@mixin responsive-mobile($colorProps: $white) {
   @media screen and (max-width: 720px) {
+    color: $colorProps;
     @content;
   }
 }
@@ -40,11 +41,11 @@ h1 {
     color: $pink;
   }
 
-  @include responsive-tablet {
+  @include responsive-tablet() {
     font-size: 26px;
   }
 
-  @include responsive-mobile() {
+  @include responsive-mobile($pink) {
     font-size: 22px;
   }
 }
