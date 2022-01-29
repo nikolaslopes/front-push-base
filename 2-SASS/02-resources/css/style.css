@@ -34,6 +34,18 @@ h1 span {
   color: #cf649a;
 }
 
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+
 .link {
   display: inline-block;
   text-decoration: none;
@@ -52,6 +64,18 @@ h1 span {
           box-shadow: 0px 17px 46px rgba(169, 80, 196, 0.35), 0px 5.125px 13.8677px rgba(169, 80, 196, 0.228056), 0px 2.12866px 5.75991px rgba(169, 80, 196, 0.175), 0px 0.7699px 2.08325px rgba(169, 80, 196, 0.121944);
 }
 
+@media screen and (max-width: 960px) {
+  .link {
+    padding: 20px 170px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .link {
+    padding: 20px 140px;
+  }
+}
+
 .list {
   width: 50%;
   margin-top: 32px;
@@ -68,7 +92,7 @@ h1 span {
 }
 
 .list li {
-  padding: 8px;
+  padding: 10px 12px;
   list-style: none;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -89,10 +113,37 @@ h1 span {
       align-self: flex-end;
 }
 
+@media screen and (max-width: 960px) {
+  .list li a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .list :is(li, :nth-child(odd)) {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 p {
   color: #fcfcfc;
   padding: 20px;
   margin-top: 64px;
   font-size: 24px;
+}
+
+@media screen and (max-width: 960px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  p {
+    color: #ccc;
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

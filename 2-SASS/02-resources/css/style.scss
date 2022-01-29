@@ -7,7 +7,7 @@
   }
 }
 
-@mixin responsive-movile {
+@mixin responsive-mobile {
   @media screen and (max-width: 720px) {
     @content;
   }
@@ -39,6 +39,14 @@ h1 {
   span {
     color: $pink;
   }
+
+  @include responsive-tablet {
+    font-size: 26px;
+  }
+
+  @include responsive-mobile() {
+    font-size: 22px;
+  }
 }
 
 .link {
@@ -59,6 +67,14 @@ h1 {
   &:hover {
     box-shadow: $box-shadow-purple;
   }
+
+  @include responsive-tablet() {
+    padding: 20px 170px;
+  }
+
+  @include responsive-mobile() {
+    padding: 20px 140px;
+  }
 }
 
 .list {
@@ -70,7 +86,7 @@ h1 {
   justify-content: center;
 
   li {
-    padding: 8px;
+    padding: 10px 12px;
     list-style: none;
     transition: 0.5s ease;
 
@@ -83,10 +99,25 @@ h1 {
     &:hover {
       opacity: 0.7;
     }
+
   }
 
   :nth-child(odd) {
     align-self: flex-end;
+  }
+
+  @include responsive-tablet() {
+    li {
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @include responsive-mobile() {
+    :is(li, :nth-child(odd)) {
+      align-self: center;
+    }
   }
 }
 
@@ -96,5 +127,14 @@ p {
   padding: 20px;
   margin-top: 64px;
   font-size: 24px;
+
+  @include responsive-tablet() {
+    font-size: 18px;
+  }
+
+  @include responsive-mobile() {
+    color: $gray;
+    font-size: 14px;
+  }
 }
 
