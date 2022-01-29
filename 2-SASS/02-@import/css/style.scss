@@ -1,5 +1,6 @@
-@import 'colors/_style';
-@import 'effects/_shadows';
+@use 'colors/_style';
+
+@use 'effects/_shadows';
 
 * {
   margin: 0;
