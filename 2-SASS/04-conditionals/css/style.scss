@@ -18,6 +18,14 @@ $text-color: #efefef;
   }
 }
 
+$sizes: 40px, 50px, 80px;
+
+@each $size in $sizes {
+  .icon-#{$size} {
+    font-size: $size;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
