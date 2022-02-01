@@ -1,0 +1,91 @@
+.grid-1 {
+  width: 96px;
+}
+
+.grid-2 {
+  width: 192px;
+}
+
+.grid-3 {
+  width: 288px;
+}
+
+.grid-4 {
+  width: 384px;
+}
+
+.grid-5 {
+  width: 480px;
+}
+
+.grid-6 {
+  width: 576px;
+}
+
+.grid-7 {
+  width: 672px;
+}
+
+.grid-8 {
+  width: 768px;
+}
+
+.grid-9 {
+  width: 864px;
+}
+
+.grid-10 {
+  width: 960px;
+}
+
+.grid-11 {
+  width: 1056px;
+}
+
+.grid-12 {
+  width: 1152px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, sans-serif;
+  background-color: #010101;
+  color: #ccc;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h1 span {
+  color: #ec697f;
+  font-weight: 900;
+  font-style: italic;
+}
+
+p {
+  margin-top: 42px;
+  padding: 20px;
+}
+/*# sourceMappingURL=style.css.map */
