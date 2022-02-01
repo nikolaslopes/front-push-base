@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .grid-1 {
   width: 96px;
 }
@@ -56,6 +57,27 @@
 
 .icon-80px {
   font-size: 80px;
+}
+
+.icon-eye:before {
+  display: inline-block;
+  font-family: "Icon Font";
+  content: "";
+  font-size: 12px;
+}
+
+.icon-start:before {
+  display: inline-block;
+  font-family: "Icon Font";
+  content: "";
+  font-size: 16px;
+}
+
+.icon-end:before {
+  display: inline-block;
+  font-family: "Icon Font";
+  content: "";
+  font-size: 10px;
 }
 
 * {
