@@ -1,2 +1,2 @@
 alert('test');
-console.log('front push');
+console.log('DOM');
