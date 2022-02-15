@@ -22,7 +22,11 @@ body {
   margin: 0 auto;
 }
 
-body h1 {
+section h1 {
   font-weight: 900;
+}
+
+section p {
+  color: #dd6f81;
 }
 /*# sourceMappingURL=styles.css.map */
