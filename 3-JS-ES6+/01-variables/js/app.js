@@ -1,11 +1,8 @@
-let consoles = ['Playstation', 'XBOX', 'Switch', 'Xbox series'];
 
-let games = ['The Last of Us', 'Hallo', 'Zelda', 'Infinite'];
+const h1 = document.querySelector('h1');
 
-const availableGames = consoles.map((item, index) => {
-  return (`${index} ${item}: ${games[index]}`);
-});
+const p = document.querySelector('p');
 
-console.log("\n\n");
+console.log(h1);
 
-availableGames.forEach((item, index, array) => console.log(item.toUpperCase()));
+console.log(p.classList[0]);
