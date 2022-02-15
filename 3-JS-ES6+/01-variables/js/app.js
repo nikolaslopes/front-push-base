@@ -8,6 +8,4 @@ const availableGames = consoles.map((item, index) => {
 
 console.log("\n\n");
 
-console.log(availableGames);
-
-availableGames.forEach((item, index, array) => console.log(item));
+availableGames.forEach((item, index, array) => console.log(item.toUpperCase()));
