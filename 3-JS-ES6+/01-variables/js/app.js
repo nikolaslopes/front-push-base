@@ -1,8 +1,18 @@
 
-const h1 = document.querySelector('h1');
-
 const p = document.querySelector('p');
+p.classList.toggle('active');
+p.classList.replace('active', 'ativado');
 
-console.log(h1);
+const img = document.querySelector('img');
 
-console.log(p.classList[0]);
+const url = img.getAttribute('src');
+
+console.log(`Url image: ${url}`)
+
+console.log(img.getAttribute('alt'));
+
+img.setAttribute('alt', 'gato-arabe');
+
+console.log(img.getAttribute('alt'));
+
+img.removeAttribute('alt');
