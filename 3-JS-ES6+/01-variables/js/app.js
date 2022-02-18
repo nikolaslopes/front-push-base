@@ -28,3 +28,12 @@ box.style.padding = '42px';
 box.style.display = 'flex';
 box.style.justifyContent = 'center';
 box.style.alignItems = 'center';
+
+const media = window.matchMedia('(max-width: 540px)');
+
+if(media.matches) {
+  box.style.borderColor = '#99C2FD';
+} else {
+  box.style.borderColor = '#633BBC';
+  box.style.borderWidth = '3px';
+}
