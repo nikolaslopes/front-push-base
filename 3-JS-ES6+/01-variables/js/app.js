@@ -9,3 +9,22 @@ link.appendChild(content);
 let container = document.querySelector("#app");
 
 container.appendChild(link);
+
+link.style.textDecoration = 'none';
+link.style.color = '#633BBC';
+link.style.fontSize = '32px';
+link.style.fontWeight = 'bold';
+
+let box = document.querySelector(".box");
+
+box.appendChild(link);
+
+box.style.width = '100%';
+box.style.height = '30%';
+box.style.border = '2px solid white';
+box.style.borderRadius = '10px';
+box.style.padding = '42px';
+
+box.style.display = 'flex';
+box.style.justifyContent = 'center';
+box.style.alignItems = 'center';
