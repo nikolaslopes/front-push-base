@@ -48,3 +48,9 @@ button.appendChild(buttonContent);
 let buttonBox = document.querySelector('#button-box');
 buttonBox.appendChild(button);
 buttonBox.style.padding = '22px';
+
+function callback() {
+  alert("Hello World!");
+}
+
+button.addEventListener('click', callback);
