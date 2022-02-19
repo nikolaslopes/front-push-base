@@ -32,6 +32,15 @@ if(media.matches) {
 }
 
 let button = document.createElement('button');
+button.style.width = '210px';
+button.style.height = '56px';
+button.style.fontSize = '22px';
+button.style.fontWeight = 'bold';
+button.style.backgroundColor = '#633BBC';
+button.style.border = '2px solid aliceblue';
+button.style.borderRadius = '10px';
+button.style.color = '#fff';
+button.style.cursor = 'pointer';
 
 let buttonContent = document.createTextNode('Click me');
 button.appendChild(buttonContent);
@@ -39,4 +48,3 @@ button.appendChild(buttonContent);
 let buttonBox = document.querySelector('#button-box');
 buttonBox.appendChild(button);
 buttonBox.style.padding = '22px';
-
