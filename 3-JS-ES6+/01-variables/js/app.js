@@ -32,7 +32,7 @@ box.style.alignItems = 'center';
 const media = window.matchMedia('(max-width: 540px)');
 
 if(media.matches) {
-  box.style.borderColor = '#99C2';
+  box.style.borderColor = '#99C2FD';
   link.style.fontSize = '26px';
 } else {
   box.style.borderColor = '#633BBC';
