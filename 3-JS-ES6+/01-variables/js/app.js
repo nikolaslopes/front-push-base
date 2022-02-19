@@ -1,11 +1,11 @@
 let link = document.createElement('a');
-link.setAttribute('href', 'https://frontpush.com.br');
+link.setAttribute('href', 'https://nikolas-lopes-curriculum.web.app/');
 link.style.textDecoration = 'none';
 link.style.color = '#633BBC';
 link.style.fontSize = '32px';
 link.style.fontWeight = 'bold';
 
-let content = document.createTextNode('Acessar o FrontPUSH');
+let content = document.createTextNode('Meu Website');
 link.appendChild(content);
 
 let container = document.querySelector("#app");
@@ -13,7 +13,7 @@ container.appendChild(link);
 
 let box = document.querySelector(".box");
 box.appendChild(link);
-box.style.width = '100%';
+box.style.width = '460px';
 box.style.height = '30%';
 box.style.border = '2px solid white';
 box.style.borderRadius = '10px';
@@ -51,6 +51,14 @@ buttonBox.style.padding = '22px';
 
 
 let input = document.querySelector('input');
+input.style.width = '100%';
+input.style.height = '56px'
+input.style.outline = 'none';
+input.style.fontSize = '16px';
+input.style.padding = '16px';
+input.style.fontWeight = '700';
+
+input.setAttribute('placeholder', 'Type Something')
 
 function callback(event) {
   let currentKey = event.key;
