@@ -29,6 +29,19 @@ box.style.display = 'flex';
 box.style.justifyContent = 'center';
 box.style.alignItems = 'center';
 
+
+let list = ['a', 'b', 'c'];
+
+const mapList = list.map((item, index, array) =>  {
+  return item;
+});
+
+console.log(mapList);
+
+console.log("\n\n")
+
+list.forEach((item, index) => console.log(index));
+
 const media = window.matchMedia('(max-width: 540px)');
 
 if(media.matches) {
@@ -38,3 +51,5 @@ if(media.matches) {
   box.style.borderColor = '#633BBC';
   box.style.borderWidth = '3px';
 }
+
+// const button = document.querySelector
