@@ -49,8 +49,12 @@ let buttonBox = document.querySelector('#button-box');
 buttonBox.appendChild(button);
 buttonBox.style.padding = '22px';
 
-function callback() {
-  alert("Hello World!");
+
+let input = document.querySelector('input');
+
+function callback(event) {
+  let currentKey = event.key;
+  alert(`A tecla ${currentKey} foi pressionada`);
 }
 
-button.addEventListener('click', callback);
+input.addEventListener('keydown', callback);
