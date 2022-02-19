@@ -32,7 +32,8 @@ box.style.alignItems = 'center';
 const media = window.matchMedia('(max-width: 540px)');
 
 if(media.matches) {
-  box.style.borderColor = '#99C2FD';
+  box.style.borderColor = '#99C2';
+  link.style.fontSize = '26px';
 } else {
   box.style.borderColor = '#633BBC';
   box.style.borderWidth = '3px';
