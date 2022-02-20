@@ -49,4 +49,20 @@ section img {
   height: 100px;
   border-radius: 50%;
 }
+
+.box {
+  background-color: #040404;
+}
+
+.red {
+  background-color: red;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.blue {
+  background-color: blue;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
 /*# sourceMappingURL=styles.css.map */

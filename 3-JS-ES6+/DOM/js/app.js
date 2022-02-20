@@ -57,6 +57,8 @@ input.style.outline = 'none';
 input.style.fontSize = '16px';
 input.style.padding = '16px';
 input.style.fontWeight = '700';
+input.style.border = '2px solid #fff';
+input.style.borderRadius = '8px';
 
 input.setAttribute('placeholder', 'Type Something')
 
@@ -66,3 +68,13 @@ function callback(event) {
 }
 
 input.addEventListener('keydown', callback);
+
+function changeBoxColor(event) {
+  if (event.key === 'a') {
+    box.classList.toggle('red');
+  } else if (event.key === 'b') {
+    box.classList.toggle('blue');
+  }
+}
+
+window.addEventListener('keydown', changeBoxColor)
