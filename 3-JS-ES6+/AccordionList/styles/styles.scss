@@ -32,6 +32,7 @@ h6{
 
 p {
   color: #505050;
+  text-align: center;
 }
 
 body {
@@ -59,13 +60,23 @@ body {
   width: 100%;
   padding: 8px 16px;
 
+  border: none;
+
   cursor: pointer;
   background-color: transparent;
 
   margin-top: 16px;
+
+  h4 {
+    transition: 0.8s ease;
+
+    &:hover {
+      color: aqua;
+    }
+  }
 }
 
 .accordion-content {
   overflow: hidden;
-  height: 0px;
+  transition: 1s ease;
 }

@@ -1,10 +1,12 @@
 const buttons = document.querySelectorAll(".accordion-button");
 
+document.querySelectorAll('.accordion-content').forEach((item) => {
+  item.style.maxHeight = 0;
+})
+
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     const accordionContent = button.nextElementSibling;
-
-    console.log(accordionContent.scrollHeight + "px");
 
     button.classList.toggle("active");
 

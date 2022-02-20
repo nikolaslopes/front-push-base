@@ -37,6 +37,7 @@ h6 {
 
 p {
   color: #505050;
+  text-align: center;
 }
 
 body {
@@ -68,13 +69,24 @@ body {
   display: block;
   width: 100%;
   padding: 8px 16px;
+  border: none;
   cursor: pointer;
   background-color: transparent;
   margin-top: 16px;
 }
 
+.accordion-button h4 {
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.accordion-button h4:hover {
+  color: aqua;
+}
+
 .accordion-content {
   overflow: hidden;
-  height: 0px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 /*# sourceMappingURL=styles.css.map */
