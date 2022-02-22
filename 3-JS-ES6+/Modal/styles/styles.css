@@ -87,6 +87,11 @@ button:hover {
   pointer-events: none;
 }
 
+.modal-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .modal-content {
   max-width: 400px;
   position: relative;
