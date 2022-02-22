@@ -2,13 +2,12 @@ const button = document.querySelector('button');
 
 const modal = document.getElementById('my-modal');
 
-const buttonClose = document.querySelector('span');
+const buttonClose = document.querySelector('.close');
 
-console.log(buttonClose)
 button.addEventListener('click', () => {
-  modal.classList.toggle('modal-active');
+  modal.classList.add('modal-active');
 })
 
 buttonClose.addEventListener('click', () => {
-  modal.classList.toggle('modal-active');
+  modal.classList.remove('modal-active');
 })
