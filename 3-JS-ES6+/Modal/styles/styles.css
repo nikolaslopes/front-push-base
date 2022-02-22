@@ -4,7 +4,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Saira', sans-serif;
+  font-family: "Saira", sans-serif;
 }
 
 body {
@@ -19,10 +19,35 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+  color: #fefefe;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #fefefe;
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+p {
+  color: #505050;
 }
 
 button {
@@ -31,8 +56,8 @@ button {
   font-size: 18px;
   font-weight: 600;
   color: #fefefe;
-  background-color: #633BBC;
-  border: 2px solid #FFF;
+  background-color: #633bbc;
+  border: 2px solid #fff;
   border-radius: 8px;
   -webkit-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
@@ -40,5 +65,46 @@ button {
 
 button:hover {
   opacity: 0.8;
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-content {
+  max-width: 400px;
+  position: relative;
+  background-color: #222;
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.close {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 24px;
+  font-size: 48px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.close:hover {
+  color: #999;
 }
 /*# sourceMappingURL=styles.css.map */
