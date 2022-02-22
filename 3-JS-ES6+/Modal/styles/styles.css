@@ -24,4 +24,21 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #fefefe;
 }
+
+button {
+  padding: 10px 24px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fefefe;
+  background-color: #633BBC;
+  border: 2px solid #FFF;
+  border-radius: 8px;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
 /*# sourceMappingURL=styles.css.map */
