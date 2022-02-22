@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "name": "Playstation 5",
+    "category": "Games",
+    "amount": 5,
+    "promotion": false,
+    "accessories": {
+      "dualSense": 1,
+      "USB-C": true,
+      "PSCamera": false,
+      "manuals": [
+        {
+          "userManual1": true
+        },
+        {
+          "userManual2": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "name": "Xbox Series X",
+    "Category": "Games",
+    "amount": 2,
+    "promotion": true
+  },
+  {
+    "id": 4,
+    "name": "iPhone 12",
+    "category": "Phones",
+    "amount": 0,
+    "accessory": false
+  }
+]
