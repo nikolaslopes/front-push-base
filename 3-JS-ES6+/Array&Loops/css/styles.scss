@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Code", sans-serif;
+  background-color: #010101;
+  color: #fefefe;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+}
