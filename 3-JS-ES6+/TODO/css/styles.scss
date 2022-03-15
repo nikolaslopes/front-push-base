@@ -96,17 +96,11 @@ input[type="text"] {
   background-color: #111;
   color: #eee;
   font-size: 18px;
-  border: 0;
+  border: none;
   border-radius: 4px;
   height: 40px;
   padding: 8px;
   margin-top: 24px;
-
-  transition: all 0.2s ease-in-out;
-
-  &:focus {
-    border: 2px solid blue;
-  }
 }
 
 button {
