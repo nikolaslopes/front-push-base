@@ -39,8 +39,6 @@ function addItem() {
 }
 
 function deleteItem(position) {
-  console.log(position);
-
   arrayItems.splice(position, 1);
   renderTodo();
 }
