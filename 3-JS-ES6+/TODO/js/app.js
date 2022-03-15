@@ -6,11 +6,19 @@ let array = ['Fazer um café', 'Ver aulas', 'Jogar'];
 
 function renderTodo() {
   array.forEach((item, index, array) => {
-    let todoElement = document.createElement('li');
-    let todoText = document.createTextNode(item);
+    let listItemElement = document.createElement('li');
+    let listItemText = document.createTextNode(item);
 
-    todoElement.appendChild(todoText);
-    listElement.appendChild(todoElement);
+    let linkListElement = document.createElement('a');
+    let linkListText = document.createTextNode('Excluir');
+
+    listItemElement.appendChild(listItemText);
+    listItemElement.classList.add('list-item');
+    linkListElement.appendChild(linkListText);
+    linkListElement.setAttribute('href', '#');
+
+    listItemElement.appendChild(linkListElement);
+    listElement.appendChild(listItemElement);
   });
 }
 
