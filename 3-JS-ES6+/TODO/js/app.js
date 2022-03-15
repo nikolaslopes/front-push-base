@@ -1,11 +1,13 @@
 let listElement = document.querySelector('.list');
-let inputElement = document.querySelector('input');
+let inputTextElement = document.querySelector('input');
 let buttonElement = document.querySelector('button');
 
-let array = ['Fazer um café', 'Ver aulas', 'Jogar'];
+let arrayItems = [];
 
 function renderTodo() {
-  array.forEach((item, index, array) => {
+  listElement.innerHTML = '';
+
+  arrayItems.forEach((item, index, array) => {
     let listItemElement = document.createElement('li');
     let listItemText = document.createTextNode(item);
 
@@ -14,8 +16,10 @@ function renderTodo() {
 
     listItemElement.appendChild(listItemText);
     listItemElement.classList.add('list-item');
+
     linkListElement.appendChild(linkListText);
     linkListElement.setAttribute('href', '#');
+    linkListElement.setAttribute('onclick', `deleteItem(${index})`);
 
     listItemElement.appendChild(linkListElement);
     listElement.appendChild(listItemElement);
@@ -23,3 +27,20 @@ function renderTodo() {
 }
 
 renderTodo();
+
+buttonElement.addEventListener('click', addItem);
+
+function addItem() {
+  let itemText = inputTextElement.value;
+  arrayItems.push(itemText);
+
+  inputTextElement.value = '';
+  renderTodo();
+}
+
+function deleteItem(position) {
+  console.log(position);
+
+  arrayItems.splice(position, 1);
+  renderTodo();
+}
