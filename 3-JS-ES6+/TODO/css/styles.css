@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "JetBrains Mono", sans-serif;
+  font-family: 'JetBrains Mono', sans-serif;
 }
 
 body {
@@ -101,7 +101,7 @@ li {
   border-bottom: 1px solid #222;
 }
 
-input[type="text"] {
+input[type='text'] {
   background-color: #111;
   color: #eee;
   font-size: 18px;
