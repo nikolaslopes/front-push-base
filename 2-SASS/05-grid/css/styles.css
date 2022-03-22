@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #0c0c0c;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 48px auto;
+  padding: 48px 16px;
+  border: 1px solid red;
+}
+/*# sourceMappingURL=styles.css.map */
