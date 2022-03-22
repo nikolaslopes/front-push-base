@@ -54,5 +54,33 @@ $gutter: 24px;
   max-width: $container;
   margin: 48px auto;
   padding: 48px 16px;
-  border: 1px solid red;
+  border: 1px solid #555;
+
+  // clearfix
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@function grid($col, $total: 12) {
+  @return ($col / $total) * 100%;
+}
+
+@for $i from 1 through 12 {
+  .grid-#{$i} {
+    width: calc(#{grid($i)} - #{$gutter});
+    height: 72px;
+    margin: $gutter / 2;
+    background-color: #222;
+    border: 1px solid #333;
+    float: left;
+
+    @include responsive(s) {
+      width: calc(100% - #{$gutter});
+      margin: $gutter / 2;
+      float: none;
+    }
+  }
 }
