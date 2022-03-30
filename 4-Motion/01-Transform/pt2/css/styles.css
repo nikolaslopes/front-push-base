@@ -20,6 +20,19 @@ body {
           align-items: center;
 }
 
+.parent {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 16px;
+  -webkit-perspective: 200px;
+          perspective: 200px;
+  -webkit-transform: rotateY(40deg);
+          transform: rotateY(40deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
 .box {
   width: 100px;
   height: 100px;
@@ -29,12 +42,7 @@ body {
   background: linear-gradient(blue, red);
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  -webkit-perspective: 400px;
-          perspective: 400px;
+  -webkit-transform: rotateX(60deg);
+          transform: rotateX(60deg);
 }
-
-.box:hover {
-  -webkit-transform: rotateX(160deg);
-          transform: rotateX(160deg);
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
