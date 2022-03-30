@@ -29,12 +29,9 @@ body {
   background: linear-gradient(blue, red);
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  -webkit-perspective: 400px;
-          perspective: 400px;
-}
-
-.box:hover {
-  -webkit-transform: rotate3d(20px, 30px, 40px, 140deg);
-          transform: rotate3d(20px, 30px, 40px, 140deg);
+  -webkit-perspective: 200px;
+          perspective: 200px;
+  -webkit-transform: rotateX(50deg);
+          transform: rotateX(50deg);
 }
 /*# sourceMappingURL=style.css.map */

@@ -23,7 +23,7 @@ body {
 
   transition: all 1s ease;
 
-  perspective: 400px;
+  perspective: 200px;
 
   &:hover {
     // * translate(x,y)
@@ -32,7 +32,6 @@ body {
     // * translateY(y)
     // * translateZ(z)
     // transform: translate(100px);
-    // transform: translate3d(0px, 50px, 200px);
 
     // * scale(x,y)
     // * scale3d(x,y,z)
@@ -46,6 +45,15 @@ body {
     // * rotateX(angle)
     // * rotateY(angle)
     // * rotateZ(angle)
-    transform: rotate3d(20px, 30px, 40px, 140deg);
+    // transform: rotateX(180deg);
+
+    // * skew(x-angle, y-angle)
+    // * skewX(angle)
+    // * skewY(angle)
+    // transform: skew(30deg);
+
+    // * transform: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY());
   }
+
+  transform: rotateX(50deg);
 }
