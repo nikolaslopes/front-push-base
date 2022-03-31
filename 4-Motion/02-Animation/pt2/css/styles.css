@@ -12,9 +12,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -23,50 +23,90 @@ body {
 .parent {
   width: 100px;
   height: 100px;
-  background-color: none;
+  background-color: #ccc;
   border-radius: 16px;
   -webkit-perspective: 200px;
           perspective: 200px;
-  -webkit-transform: rotateY(40deg);
-          transform: rotateY(40deg);
+  -webkit-transform: rotateY(30deg);
+          transform: rotateY(30deg);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  -webkit-animation: parent 10s cubic-bezier(0, 1, 1, 1.61) infinite alternate;
+          animation: parent 10s cubic-bezier(0, 1, 1, 1.61) infinite alternate;
 }
 
 .box {
   width: 100px;
-  height: 50px;
+  height: 100px;
   cursor: pointer;
   border-radius: 16px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#4141a7), to(#af3fb3));
-  background: linear-gradient(#4141a7, #af3fb3);
-  -webkit-animation: box 4s cubic-bezier(0, 1, 1, 0) infinite alternate both;
-          animation: box 4s cubic-bezier(0, 1, 1, 0) infinite alternate both;
+  -webkit-animation: box 2s cubic-bezier(0, 1, 1, 1.61) infinite alternate, change-color 1s cubic-bezier(0, 1, 1, 1.61) infinite alternate;
+          animation: box 2s cubic-bezier(0, 1, 1, 1.61) infinite alternate, change-color 1s cubic-bezier(0, 1, 1, 1.61) infinite alternate;
 }
 
 @-webkit-keyframes box {
   0% {
-    width: 0px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#a51b60), to(#d40ddb));
-    background: linear-gradient(#a51b60, #d40ddb);
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
   }
   100% {
-    width: 700px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#02ddc0), to(#1eb35c));
-    background: linear-gradient(#02ddc0, #1eb35c);
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
   }
 }
 
 @keyframes box {
   0% {
-    width: 0px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#a51b60), to(#d40ddb));
-    background: linear-gradient(#a51b60, #d40ddb);
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
   }
   100% {
-    width: 700px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#02ddc0), to(#1eb35c));
-    background: linear-gradient(#02ddc0, #1eb35c);
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+}
+
+@-webkit-keyframes change-color {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(blue));
+    background: linear-gradient(blue);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(red));
+    background: linear-gradient(red);
+  }
+}
+
+@keyframes change-color {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(blue));
+    background: linear-gradient(blue);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(red));
+    background: linear-gradient(red);
+  }
+}
+
+@-webkit-keyframes parent {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes parent {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
 }
 /*# sourceMappingURL=styles.css.map */

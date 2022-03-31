@@ -10,40 +10,58 @@ body {
   background-color: #1a1a1a;
 
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
 .parent {
   width: 100px;
   height: 100px;
-  background-color: none;
+  background-color: #ccc;
   border-radius: 16px;
 
   perspective: 200px;
-  transform: rotateY(40deg);
+  transform: rotateY(30deg);
 
   transform-style: preserve-3d;
+
+  animation: parent 10s cubic-bezier(0, 1, 1, 1.61) infinite alternate;
 }
 
 .box {
   width: 100px;
-  height: 50px;
+  height: 100px;
   cursor: pointer;
   border-radius: 16px;
-  background: linear-gradient(rgb(65, 65, 167), rgb(175, 63, 179));
 
   // * animation: name duration timing-function delay iteration-count direction;
-  animation: box 4s cubic-bezier(0, 1, 1, 0) infinite alternate both;
+  animation: box 2s cubic-bezier(0, 1, 1, 1.61) infinite alternate,
+    change-color 1s cubic-bezier(0, 1, 1, 1.61) infinite alternate;
 }
 
 @keyframes box {
   0% {
-    width: 0px;
-    background: linear-gradient(rgb(165, 27, 96), rgb(212, 13, 219));
+    transform: rotateX(0deg);
   }
   100% {
-    width: 700px;
-    background: linear-gradient(rgb(2, 221, 192), rgb(30, 179, 92));
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes change-color {
+  0% {
+    background: linear-gradient(blue);
+  }
+  100% {
+    background: linear-gradient(red);
+  }
+}
+
+@keyframes parent {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
   }
 }
