@@ -12,9 +12,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -23,7 +23,7 @@ body {
 .parent {
   width: 100px;
   height: 100px;
-  background-color: #ccc;
+  background-color: none;
   border-radius: 16px;
   -webkit-perspective: 200px;
           perspective: 200px;
@@ -35,13 +35,13 @@ body {
 
 .box {
   width: 100px;
-  height: 100px;
+  height: 50px;
   cursor: pointer;
   border-radius: 16px;
   background: -webkit-gradient(linear, left top, left bottom, from(#4141a7), to(#af3fb3));
   background: linear-gradient(#4141a7, #af3fb3);
-  -webkit-animation: box 2s ease infinite alternate;
-          animation: box 2s ease infinite alternate;
+  -webkit-animation: box 4s cubic-bezier(0, 1, 1, 0) infinite alternate both;
+          animation: box 4s cubic-bezier(0, 1, 1, 0) infinite alternate both;
 }
 
 @-webkit-keyframes box {
@@ -51,7 +51,7 @@ body {
     background: linear-gradient(#a51b60, #d40ddb);
   }
   100% {
-    width: 400px;
+    width: 700px;
     background: -webkit-gradient(linear, left top, left bottom, from(#02ddc0), to(#1eb35c));
     background: linear-gradient(#02ddc0, #1eb35c);
   }
@@ -64,7 +64,7 @@ body {
     background: linear-gradient(#a51b60, #d40ddb);
   }
   100% {
-    width: 400px;
+    width: 700px;
     background: -webkit-gradient(linear, left top, left bottom, from(#02ddc0), to(#1eb35c));
     background: linear-gradient(#02ddc0, #1eb35c);
   }

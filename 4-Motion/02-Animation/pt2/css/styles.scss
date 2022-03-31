@@ -10,14 +10,14 @@ body {
   background-color: #1a1a1a;
 
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .parent {
   width: 100px;
   height: 100px;
-  background-color: #ccc;
+  background-color: none;
   border-radius: 16px;
 
   perspective: 200px;
@@ -28,13 +28,13 @@ body {
 
 .box {
   width: 100px;
-  height: 100px;
+  height: 50px;
   cursor: pointer;
   border-radius: 16px;
   background: linear-gradient(rgb(65, 65, 167), rgb(175, 63, 179));
 
   // * animation: name duration timing-function delay iteration-count direction;
-  animation: box 2s ease infinite alternate;
+  animation: box 4s cubic-bezier(0, 1, 1, 0) infinite alternate both;
 }
 
 @keyframes box {
@@ -43,7 +43,7 @@ body {
     background: linear-gradient(rgb(165, 27, 96), rgb(212, 13, 219));
   }
   100% {
-    width: 400px;
+    width: 700px;
     background: linear-gradient(rgb(2, 221, 192), rgb(30, 179, 92));
   }
 }
