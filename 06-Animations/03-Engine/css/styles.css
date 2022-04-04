@@ -27,6 +27,7 @@ svg {
 #gear1 {
   -webkit-transform-origin: center center;
           transform-origin: center center;
+  transform-box: fill-box;
   -webkit-animation: gear1 12s linear infinite;
           animation: gear1 12s linear infinite;
 }
@@ -56,6 +57,7 @@ svg {
 #gear2 {
   -webkit-transform-origin: center center;
           transform-origin: center center;
+  transform-box: fill-box;
   -webkit-animation: gear2 12s linear infinite;
           animation: gear2 12s linear infinite;
 }

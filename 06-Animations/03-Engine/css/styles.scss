@@ -20,6 +20,7 @@ svg {
 
 #gear1 {
   transform-origin: center center;
+  transform-box: fill-box;
 
   animation: gear1 12s linear infinite;
 }
@@ -35,6 +36,8 @@ svg {
 
 #gear2 {
   transform-origin: center center;
+  transform-box: fill-box;
+
   animation: gear2 12s linear infinite;
 }
 
