@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #0c0c0c;
+  color: #fefefe;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 16px 0;
+}
+
+p {
+  color: #777;
+  margin: 16px 0;
+}
+
+.container {
+  max-width: 1200px;
+  height: 300px;
+
+  margin: 0 auto;
+
+  display: flex;
+}
+
+.item {
+  width: 240px;
+  height: 90%;
+  margin: 5px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+}
