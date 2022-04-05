@@ -1,5 +1,18 @@
-const container = document.querySelector('.container');
+const header = document.querySelector('header');
 const items = document.querySelectorAll('.item');
+
+gsap.fromTo(
+  header,
+  {
+    y: -80,
+    opacity: 0,
+  },
+  {
+    y: 0,
+    opacity: 1,
+    delay: 2,
+  }
+);
 
 gsap.fromTo(
   items,
