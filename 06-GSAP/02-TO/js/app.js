@@ -2,10 +2,14 @@ const container = document.querySelector('.container');
 
 const header = document.querySelector('header');
 
-gsap.to(header, 1, {
-  y: 300,
+gsap.from(header, {
+  duration: 2,
+  ease: 'back.out(5)',
+  y: 500,
 });
 
-gsap.to(container, 2, {
-  y: -300,
+gsap.from(container, {
+  duration: 2,
+  ease: 'bounce.out',
+  y: -900,
 });
