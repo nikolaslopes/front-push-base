@@ -17,7 +17,7 @@ gsap.fromTo(
 gsap.fromTo(
   items,
   {
-    scale: 0.3,
+    scale: 0.4,
     opacity: 0,
     rotate: '0deg',
   },
