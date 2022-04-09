@@ -24,7 +24,7 @@ gsap.fromTo(
   {
     scale: 1,
     opacity: 1,
-    rotate: '720deg',
+    rotate: '360deg',
     duration: 1,
     repeat: 1,
     onStart: function () {
