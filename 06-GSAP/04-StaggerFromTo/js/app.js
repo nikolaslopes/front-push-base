@@ -14,7 +14,7 @@ TweenMax.staggerFromTo(
     scale: 1,
     opacity: 1,
     ease: 'bounce.out',
-    rotate: '720deg',
+    rotate: '360deg',
     repeat: -1,
     yoyo: true,
   },
